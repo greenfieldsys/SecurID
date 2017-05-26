@@ -29,7 +29,11 @@ Configure syslog on RSA to send to local Syslog.
 
 SSH into RSA Appliance and edit /etc/syslog-ng/syslog-ng.conf
 
+Edit the following lines / uncomment:
+
 destination logserver { udp("xxx.xxx.xxx.xxx" port(xxx) time-zone(-00:00)); };
+log { source(src); destination(logserver); };
+
 
 This will send the syslog information, using UTC as the timezone of the graylog server.
 
