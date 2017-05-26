@@ -35,7 +35,7 @@ This will send the syslog information, using UTC as the timezone of the graylog 
 
 Then restart the service  /etc/init.d/syslog restart
 
-*** Have to provide information regarding the sylog configuraiton regarding time and syslog-ng.
+For futher information refer to: https://community.rsa.com/docs/DOC-46055
 
 ## Screenshots
 
